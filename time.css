@@ -1,0 +1,560 @@
+@font-face {
+    font-family: Rubik;
+    src: url(../../fonts/Rubik/Rubik-VariableFont_wght.ttf);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.body{
+    background-color: rgb(0, 0, 50);
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container {
+    width: 55rem;
+    height: auto;
+    background-color: rgb(0, 0, 50);
+    margin-inline: auto;
+    top: 7rem;
+    display: flex;
+}
+.small{
+    margin-left: 1.5rem;
+    width: 41rem;
+    height: auto;
+    background-color: rgb(0, 0, 50);
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    row-gap: 1rem;
+}
+.report{
+    width: 12rem;
+    height: 25rem;
+    background-color: rgb(19, 19, 66);
+    border-radius: 1rem;
+}
+.head {
+    height: 17rem;
+    width: 12rem;
+    background-color: rgb(74, 74, 255);
+    color: white;
+    border-radius: 1rem;
+}
+.robson{
+    width: 3.5rem;
+    height: 3.5rem;
+    border: 2px solid white;
+    border-radius: 2rem;
+    margin-top: 1.5rem;
+    margin-left: 1.25rem;
+}
+.intro {
+    font-size: 11px;
+    font-family: Rubik;
+    margin-left: 1.25rem;
+    margin-top: 2rem;
+    color: rgba(255, 255, 255, 0.596);
+}
+.jeremy{
+    font-family: Rubik;
+    font-weight: 300;
+    margin-left: 1.25rem;
+    padding-top: -0.5rem;
+    font-size: 2rem;
+}
+.daily{
+    color: rgba(245, 245, 245, 0.61);
+    font-family: Rubik;
+    font-size: 12px;
+    margin-top: 1rem;
+    margin-left: 1.25rem;
+}
+.daily:hover {
+    color: white;
+    cursor: pointer;
+}
+.weekly{
+    color:rgba(245, 245, 245, 0.61);
+    font-family: Rubik;
+    font-size: 12px;
+    margin-top: 1rem;
+    margin-left: 1.25rem;
+}
+.weekly:hover {
+    color: white;
+    cursor: pointer;
+}
+.monthly{
+    color:rgba(245, 245, 245, 0.61);
+    font-family: Rubik;
+    font-size: 12px;
+    margin-top: 1rem;
+    margin-left: 1.25rem;
+}
+.monthly:hover {
+    color: white;
+    cursor: pointer;
+}
+.one {
+    background-color: hsl(15, 100%, 70%);
+    width: 12rem;
+    height: 12rem;
+    border-radius: 1rem;
+    position: relative;
+}
+.workImg{
+    float: right;
+    margin-right: 1rem;
+    z-index: -1;
+    width: 4rem;
+    height: 4rem;
+}
+.work{
+    background-color: rgb(19, 19, 66);
+    width: 12rem;
+    height: 9.5rem;
+    top: 2.5rem;
+    z-index: 2;
+    border-radius: 0.75rem;
+    position: absolute;
+}
+.work:hover {
+    background-color: rgba(21, 32, 97, 0.938);
+}
+.first {
+    width: 12rem;
+    height: 2rem;
+    background-color: rgb(19, 19, 66);
+    border-radius: 1rem;
+    margin-top: 1rem;
+}
+.workhead{
+    margin-block-start: 3rem;
+    color: white;
+    font-family: Rubik;
+    font-weight: 400;
+    display: inline;
+    margin-left: 1rem;
+}
+.ellipsis{
+    float: right;
+    margin-right: 1rem;
+    margin-top: 0.5rem;
+    height: 0.25rem;
+}
+.ellipsis:hover{
+    color: white;
+}
+.current_time{
+    margin-top: 0.5rem;
+    color: white;
+    font-family: Rubik;
+    font-weight: 300;
+    margin-left: 1rem;
+}
+.prev_time{
+    margin-top: 1rem;
+    color: rgba(255, 255, 255, 0.621);
+    font-family: Rubik;
+    font-weight: 300;
+    margin-left: 1rem;
+}
+.two {
+    background-color: hsl(195, 74%, 62%);
+    width: 12rem;
+    height: 12rem;
+    border-radius: 1rem;
+    position: relative;
+}
+.playImg{
+    float: right;
+    margin-right: 1rem;
+    z-index: -1;
+    width: 4rem;
+    height: 4rem;
+}
+.play{
+    background-color: rgb(19, 19, 66);
+    width: 12rem;
+    height: 9.5rem;
+    top: 2.5rem;
+    z-index: 2;
+    border-radius: 0.75rem;
+    position: absolute;
+}
+.play:hover {
+    background-color: rgba(21, 32, 97, 0.938);
+}
+.playhead{
+    color: white;
+    font-family: Rubik;
+    font-weight: 400;
+    display: inline;
+    padding-top: 3rem;
+    margin-left: 1rem;
+}
+.three {
+    background-color: hsl(348, 100%, 68%);
+    width: 12rem;
+    height: 12rem;
+    border-radius: 1rem;
+    position: relative;
+}
+.studyImg{
+    float: right;
+    margin-right: 1rem;
+    z-index: -1;
+    width: 4rem;
+    height: 4rem;
+}
+.study{
+    background-color: rgb(19, 19, 66);
+    width: 12rem;
+    height: 9.5rem;
+    top: 2.5rem;
+    z-index: 2;
+    border-radius: 0.75rem;
+    position: absolute;
+}
+.study:hover {
+    background-color: rgba(21, 32, 97, 0.938);
+}
+.studyhead{
+    color: white;
+    font-family: Rubik;
+    font-weight: 400;
+    display: inline;
+    padding-top: 3rem;
+    margin-left: 1rem;
+}
+.four {
+    background-color: hsl(145, 58%, 55%);
+    width: 12rem;
+    height: 12rem;
+    border-radius: 1rem;
+    position: relative;
+}
+.exerciseImg{
+    float: right;
+    margin-right: 1rem;
+    z-index: -1;
+    width: 4rem;
+    height: 4rem;
+}
+.exercise{
+    background-color: rgb(19, 19, 66);
+    width: 12rem;
+    height: 9.5rem;
+    top: 2.5rem;
+    z-index: 2;
+    border-radius: 0.75rem;
+    position: absolute;
+}
+.exercise:hover {
+    background-color: rgba(21, 32, 97, 0.938);
+}
+.exercisehead{
+    color: white;
+    font-family: Rubik;
+    font-weight: 400;
+    display: inline;
+    padding-top: 3rem;
+    margin-left: 1rem;
+}
+.five {
+    background-color: hsl(264, 64%, 52%);
+    width: 12rem;
+    height: 12rem;
+    border-radius: 1rem;
+    position: relative;
+}
+.socialImg{
+    float: right;
+    margin-right: 1rem;
+    z-index: -1;
+    width: 4rem;
+    height: 4rem;
+}
+.social{
+    background-color: rgb(19, 19, 66);
+    width: 12rem;
+    height: 9.5rem;
+    top: 2.5rem;
+    z-index: 2;
+    border-radius: 0.75rem;
+    position: absolute;
+}
+.social:hover {
+    background-color: rgba(21, 32, 97, 0.938);
+}
+.socialhead{
+    color: white;
+    font-family: Rubik;
+    font-weight: 400;
+    display: inline;
+    padding-top: 3rem;
+    margin-left: 1rem;
+}
+.six {
+    background-color: hsl(43, 84%, 65%);
+    width: 12rem;
+    height: 12rem;
+    border-radius: 1rem;
+    position: relative;
+}
+.selfcareImg{
+    float: right;
+    margin-right: 1rem;
+    z-index: -1;
+    width: 4rem;
+    height: 4rem;
+}
+.selfcare{
+    background-color: rgb(19, 19, 66);
+    width: 12rem;
+    height: 9.5rem;
+    top: 2.5rem;
+    z-index: 2;
+    border-radius: 0.75rem;
+    position: absolute;
+}
+.selfcare:hover {
+    background-color: rgba(21, 32, 97, 0.938);
+}
+.selfcarehead{
+    color: white;
+    font-family: Rubik;
+    font-weight: 400;
+    display: inline;
+    padding-top: 3rem;
+    margin-left: 1rem;
+}
+
+.active{
+    color: #fff;
+}
+
+
+@media screen and (max-width: 500px) {
+.body{
+    background-color: rgb(0, 0, 50);
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container {
+    width: 100%;
+    height: auto;
+    background-color: rgb(0, 0, 50);
+    margin-inline: auto;
+    top: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+.report{
+    margin-top: 5rem;
+    width: 15rem;
+    height: 8.5rem;
+    background-color: rgb(19, 19, 66);
+    border-radius: 0.5rem;
+    margin-inline: auto;
+}
+.head {
+    height: 5.5rem;
+    width: 15rem;
+    background-color: rgb(74, 74, 255);
+    color: white;
+    border-radius: 0.5rem;
+    margin-bottom: 0.75rem;
+}
+.robson{
+    width: 2.5rem;
+    height: 2.5rem;
+    border: 2px solid white;
+    border-radius: 2rem;
+    margin-top: 1.5rem;
+    margin-left: 1.25rem;
+}
+.intro {
+    font-size: 11px;
+    font-family: Rubik;
+    margin-left: 1.25rem;
+    margin-top: 2rem;
+    color: rgba(255, 255, 255, 0.596);
+    float: right;
+    margin-right: 6.75rem;
+}
+.jeremy{
+    font-family: Rubik;
+    font-weight: 300;
+    margin-left: 1.25rem;
+    padding-top: -0.5rem;
+    font-size: 1rem;
+    float: right;
+    margin-top: -1.5rem;
+    margin-right: 2.95rem;
+}
+.daily{
+    color: rgba(245, 245, 245, 0.61);
+    font-family: Rubik;
+    font-size: 12px;
+    margin-top: 3rem;
+    margin-left: 2.5rem;
+    display: inline;
+    padding-top: 1rem;
+}
+.weekly{
+    color:rgba(245, 245, 245, 0.61);
+    font-family: Rubik;
+    font-size: 12px;
+    margin-top: 2rem;
+    margin-left: 1.25rem;
+    display: inline;
+}
+.monthly{
+    color:rgba(245, 245, 245, 0.61);
+    font-family: Rubik;
+    font-size: 12px;
+    margin-top: 2rem;
+    margin-left: 1.25rem;
+    display: inline;
+}
+.small{
+    margin-inline: auto;
+    width: 100%;
+    height: auto;
+    background-color: rgb(0, 0, 50);
+    display: flex;
+    flex-direction: column;
+}
+.one {
+    background-color: hsl(15, 100%, 70%);
+    width: 15rem;
+    height: 9rem;
+    border-radius: 1rem;
+    position: relative;
+    margin-top: 1rem;
+    margin-inline: auto;
+}
+.work{
+    background-color: rgb(19, 19, 66);
+    width: 15rem;
+    height: 6.5rem;
+    top: 2.5rem;
+    z-index: 2;
+    border-radius: 0.75rem;
+    position: absolute;
+}
+.two {
+    background-color: hsl(195, 74%, 62%);
+    width: 15rem;
+    height: 9rem;
+    border-radius: 1rem;
+    position: relative;
+    margin-inline: auto;
+}
+.play{
+    background-color: rgb(19, 19, 66);
+    width: 15rem;
+    height: 6.5rem;
+    top: 2.5rem;
+    z-index: 2;
+    border-radius: 0.75rem;
+    position: absolute;
+}
+.three {
+    background-color: hsl(348, 100%, 68%);
+    width: 15rem;
+    height: 9rem;
+    border-radius: 1rem;
+    position: relative;
+    margin-inline: auto;
+}
+.study{
+    background-color: rgb(19, 19, 66);
+    width: 15rem;
+    height: 6.5rem;
+    top: 2.5rem;
+    z-index: 2;
+    border-radius: 0.75rem;
+    position: absolute;
+}
+.four {
+    background-color: hsl(145, 58%, 55%);
+    width: 15rem;
+    height: 9rem;
+    border-radius: 1rem;
+    position: relative;
+    margin-inline: auto;
+}.exercise{
+    background-color: rgb(19, 19, 66);
+    width: 15rem;
+    height: 6.5rem;
+    top: 2.5rem;
+    z-index: 2;
+    border-radius: 0.75rem;
+    position: absolute;
+}
+.five {
+    background-color: hsl(264, 64%, 52%);
+    width: 15rem;
+    height: 9rem;
+    border-radius: 1rem;
+    position: relative;
+    margin-inline: auto;
+}
+.social{
+    background-color: rgb(19, 19, 66);
+    width: 15rem;
+    height: 6.5rem;
+    top: 2.5rem;
+    z-index: 2;
+    border-radius: 0.75rem;
+    position: absolute;
+}
+.six {
+    background-color: hsl(43, 84%, 65%);
+    width: 15rem;
+    height: 9rem;
+    border-radius: 1rem;
+    position: relative;
+    margin-inline: auto;
+}
+.selfcare{
+    background-color: rgb(19, 19, 66);
+    width: 15rem;
+    height: 6.5rem;
+    top: 2.5rem;
+    z-index: 2;
+    border-radius: 0.75rem;
+    position: absolute;
+}
+.current_time{
+    margin-top: -0.5rem;
+    color: white;
+    font-family: Rubik;
+    font-weight: 300;
+    margin-left: 1rem;
+}
+.prev_time{
+    margin-top: 0rem;
+    color: rgba(255, 255, 255, 0.621);
+    font-family: Rubik;
+    font-weight: 300;
+    margin-left: 1rem;
+}
+.ellipsis{
+    float: right;
+    margin-right: -2rem;
+    margin-top: 0.5rem;
+    height: 0.25rem;
+}
+}
